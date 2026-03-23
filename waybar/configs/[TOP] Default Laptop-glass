@@ -1,0 +1,57 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+
+// ### DEFAULT Laptop  - Top ### //
+{
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules"
+  ],
+"layer": "top",
+"gtk-layer-shell": true,
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 3,
+"margin-left": 8,
+"margin-right": 8,
+
+"modules-left": [
+        "custom/separator#blank",
+        "custom/cava_mviz",
+        "custom/separator#blank",
+        "custom/playerctl",
+        "hyprland/window"
+        ],
+
+"modules-center": [
+        "group/app_drawer",
+        "custom/separator#blank",
+        "group/notify",
+        "hyprland/workspaces#rw",
+        "clock",
+        "custom/weather",
+        "idle_inhibitor",       
+        "custom/hint"
+        ],
+
+"modules-right": [
+    "tray",
+    "backlight",
+    "battery",
+    "cpu",
+    "power-profiles-daemon",
+    "temperature",
+    "memory",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "custom/nightlight"
+],
+"tooltips":true,
+}
